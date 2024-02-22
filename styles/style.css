@@ -1,0 +1,73 @@
+:root {
+	--color-nav: #0084fd;
+	--color-light-blue: #b5ddff;
+	--color-secondary-bg-color: #9792e4;
+	--color-footer: #333333;
+	--color-free: #fbc25f;
+    --color-secondary-color: #f6f6f6;
+}
+
+/*************************************************
+    RESET
+ *************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container{
+    margin: 20px 15px;
+}
+
+.even {
+    background-color: var(--color-secondary-bg-color);
+    color: var(--color-secondary-color);
+}   
+
+/************************************************
+    SITE SECTIONS
+ ************************************************/
+/* HEADER SECTION */
+header {
+    background-color: var(--color-nav);
+    color: var(--color-secondary-color);
+}
+
+/* FEATURES SECTION */
+
+#features .card {
+    background-color: var(--color-light-blue);
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* FOOTER SECTION */
+footer {
+    background-color: var(--color-footer);
+    color: var(--color-secondary-color);
+    
+}
