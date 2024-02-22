@@ -103,6 +103,9 @@ img {
 .column { 
     flex-direction: column;
 }
+.gap-20 {
+    gap: 20px;
+}
 
 /************************************************
     SITE SECTIONS
@@ -168,7 +171,7 @@ nav:hover i {
     background-color: var(--color-nav);
 }
 .card-image div {
-    width: 70%;
+    height: 70%;
 }
 
 .card-image  {
@@ -182,4 +185,25 @@ footer {
     background-color: var(--color-footer);
     color: var(--color-secondary-color);
     
+}
+
+/************************************************
+        MEDIA QUERY
+ ************************************************/
+
+/* TABLET MEDIA QUERY */
+
+@media screen and (min-width: 576px) {
+    #features .container .card{
+        width: calc(100% / 3 - 20px);
+    }
+    #features .container .pb-0.card.card {
+        width: calc(100% / 3 * 2 - 20px);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pb-0.card {
+        display: flex;
+    }
 }
