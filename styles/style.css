@@ -20,6 +20,10 @@
 ul {
     list-style: none;
 }
+a {
+    text-decoration: none;
+    color: var(--color-secondary-color);
+}
 
 /*************************************************
     GENERAL STYLES
@@ -39,6 +43,7 @@ img {
 
 .container{
     margin: 20px 15px;
+    padding: 10px;
 }
 
 .even {
@@ -47,14 +52,85 @@ img {
 }   
 
 /************************************************
+    UTILITIES
+ ************************************************/
+ .row {
+    display: flex;
+}
+.s-between {
+    justify-content:space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+.baseline {
+    align-items: baseline;
+}
+.items-center {
+    align-items: center;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.j-center {
+    justify-content: center;
+    justify-items: center;
+}
+
+.j-end {
+    justify-content: flex-end;
+}
+.content-center {
+    align-content: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.column { 
+    flex-direction: column;
+}
+/************************************************
     SITE SECTIONS
  ************************************************/
-/* HEADER SECTION */
+
+ /* HEADER SECTION */
 header {
     background-color: var(--color-nav);
     color: var(--color-secondary-color);
+    height: 60px;
 }
+header .container {
+    margin: 0 15px;
 
+}
+nav i {
+    font-size: 2em;
+}
+header nav ul {
+    background-color: var(--color-nav);
+}
+header nav li {
+    padding: 5px;
+    padding-left: 0;
+}
+.hidden-navbar {
+    display: none;
+}
+nav:hover .hidden-navbar{
+    display: flex;
+    position: relative;
+    z-index: 1001;
+}
+nav:hover i {
+    display: none;
+}
 /* FEATURES SECTION */
 
 #features .card {
